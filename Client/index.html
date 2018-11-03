@@ -11,14 +11,16 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"><h2>🏭 Image Factory</h2></a>
+        <a class="navbar-brand" href="#">
+            <h2>🏭 Image Factory</h2>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
-            <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0" onkeypress="if (event.keyCode == 13) {document.getElementById('searchBtn').click()}return event.keyCode != 13;">
                 <input class="form-control mr-sm-2" type="text" id="searchInput" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" id="searchBtn" type="button">Search!</button>
             </form>
